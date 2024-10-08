@@ -1,0 +1,216 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }/*gernerally developers does this*/
+html
+{
+    scroll-behavior: smooth;
+}
+        body {
+            background-color: rgb(3, 3, 46);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;/*other display properties are none,table,inline,block,inlineblock etc...*/
+            justify-content: space-around;
+            align-items: center;/*vertically*/
+            height: 80px;/*we didnt mention width so it takes full width*/
+            background-color: rgb(38, 38, 77);
+        }
+        /* |    item1    |     item2      |     item3       | this is justify space around*/
+/* we have justify content:flex start,flex end,space around,space between,center etc....*/
+        nav ul {
+            display: flex;
+            /*contents will be adjusted by itself*/
+            justify-content: center;
+        }
+        /* |        item1|item2|item3           | this is justify center*/
+        nav ul li {
+            list-style: none;
+            /*here any list styles such as bullets, or dots for list items sets as null*/
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /*a: This targets an anchor (<a>) element within the <li>.*/
+        nav ul li a:hover {
+            color: rgb(93, 93, 182);
+            font-size: 1.2rem;
+        }
+
+        main hr {
+            border: 0;
+            height: 1.2px;
+            margin: 40px 84px;
+            background: #9c97f1;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            /*here rem menas root element i.e. <html> 1.5* size of root element applied-->
+            <!--.left refers class*/
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            /*here if there is no flex contents coming vertically and without justify content contents attaching each other and with it ,contents occuping total horizontal space*/
+            margin: 80px 0px;
+            /*first number for top bottom ...how much spcae between the first section and upper content and lower content and second number ...spaces between left with first section with  right contents..if increased contents in first section comes closer*/
+            align-items: center;
+            /*aligning the items vertically center here*/
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+      button{
+         background-color: rgb(58, 10, 104);
+         border-color: blueviolet;
+         color: white; 
+         border-radius: 5px ;
+         margin-left: 100px;
+         padding: 20px 20px;
+           }
+           #butncls
+           {
+            display: flex;
+            align-items: center;
+            margin-left: 100px;
+            position: relative;
+            bottom: 80px;
+           }
+        /* there are various units in css px,vw,vh,%,rem,em,cm etc...
+        /*here we given first section> div which means this apply css styles to only direct children of first class but not all...we did this beacuse it is apply the sub child div..ie...the statement of "and iam....."causing the lines to be improper IT APLLIES FOR LEFT SECTION AND RIGHT SECTION*/
+        .leftsection {
+
+            font-size: 2.8rem;
+        }
+
+        .rightsection img {
+            width: 80%;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+           
+            
+            
+        }
+        
+        .thirdsection
+        {
+            margin: 64px;
+            position: relative;
+            top: 40vw;
+        }
+.thirdsection h1{
+    position:relative;
+    left:50px;
+   
+}
+        .secondsection h1 {
+            font-size: 1.9rem;
+            height: 80vh;
+            /*gives hight i.e page length extended*/
+        }
+
+        .secondsection .box {
+            display: flex;
+            background: white;
+            width: 70vw;
+            height: 1px;
+            margin: -484px 30px;
+        }
+        .secondsection .vertical
+        {
+            background: white;
+            width: 1px;
+            height:85px;
+            margin: 0px 175px;
+        }
+       
+         .info
+        {
+            display: flex;
+            
+            margin: 92px -1152px;
+}
+pre{
+    color:white;
+    margin: -3px -31px;
+}
+        
+        /*property sets the maximum width of an element to 80% of the viewport width, and margin: auto; centers the element horizontally on the page. */
+        .purple {
+            color: blueviolet;
+        }
+        #element {
+            color: blueviolet;
+        }
+
+        /* as it is a eleent we put# */
+
+        /* this purple class is a utility class ,where * and body are global class.Utility classes refer to small, single-purpose classes that typically perform a specific styling function. are not tied to any particular semantic meaning but rather serve a functional or stylistic purpose across different elements.left section,right section etc.. are side specific classes.....organizing classes are important ....*/
+/*third section*/
+.nptel
+{
+    border: purple solid 2px;
+    height:250px;
+    width:250px;
+}
+.mk
+{
+    border: purple solid 2px;
+    height:250px;
+    width:250px;
+}
+.hrnk
+{
+    border: purple solid 2px;
+    height:250px;
+    width:250px;
+}
+.cercontainer
+{
+    display: flex;
+    justify-content:space-evenly;
+    
+    
+}
+.cerinfo
+{
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+}
+.cerinfo p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/*footer*/
+.footer
+{
+    height: 100px;
+    border: 5px;
+   
+    position: relative;
+   margin-top: 550px;
+}
+
+.foo1
+{
+    display: flex;
+    justify-content:space-evenly; 
+}
